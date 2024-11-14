@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Pacifico&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+  body{
+    @apply tracking-wide text-secondary font-Mont bg-bgBody
+  }
+}
+@layer utilities {
+  .skills {
+    @apply w-full max-w-[600px] px-2 py-4;
+  }
+  
+  .skill_name {
+    @apply text-xl font-medium text-secondary mx-auto;
+  }
+  
+  .skill_bar {
+    @apply h-4 bg-tertiary rounded-md;
+  }
+  
+  .skill_per {
+    @apply h-4 bg-secondary rounded-md relative animate-fillbars;
+    
+    &::before {
+      content: attr(per);
+      color: white;
+      font-weight: 700;
+      position: absolute;
+      padding: 4px 6px;
+      background-color: black;
+      border-radius: 4px;
+      font-size: 12px;
+      top: -35px;
+      right: 0;
+       transform: transLateX(50%);
+    }
+    
+    &::after {
+      content: "";
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      background-color: black;
+      top: -15px;
+      right: 0;
+      translate: 50%;
+      rotate: 45deg;
+      border-radius: 2px;
+    }
+  }
+}
