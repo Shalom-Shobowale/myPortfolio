@@ -13,7 +13,7 @@ export default function About() {
   // })
   return (
     <div className="my-12 flex justify-center" id="about">
-      <div className="flex flex-col md:flex-row w-[90%] md:w-[75%] items-center md:gap-y-0 gap-y-10">
+      <div className="flex flex-col-reverse md:flex-row w-[90%] md:w-[75%] items-center md:gap-y-0 gap-y-10">
         <div className="md:w-[45%]">
             <img src="love.jpg" alt="" className='md:h-[500px] md:w-[370px] rounded' data-aos="fade-zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600" />
         </div>
@@ -148,12 +148,12 @@ export default function About() {
             </div>
             <div className={`${open === 3 ? "inline-block" : "hidden"}`}>
               <div className="flex">
-                <div className="hidden md:flex relative">
-                  <div className="h-44 w-1 bg-secondary absolute left-[8px] top-7"></div>
-                  <div className="h-44 w-1 bg-secondary absolute left-[8px] bottom-8"></div>
+                <div className="hidden md:flex relative mr-10">
+                  <div className="h-48 w-1 bg-secondary absolute left-[8px] top-10"></div>
+                  <div className="h-48 w-1 bg-secondary absolute left-[8px] bottom-10"></div>
                   <div>
                     <button className="rounded-full bg-black h-5 w-5">1</button>
-                    <button className="rounded-full bg-black h-5 w-5 my-48">
+                    <button className="rounded-full bg-black h-5 w-5 my-56">
                       2
                     </button>
                     <button className="rounded-full bg-black h-5 w-5">3</button>
@@ -165,14 +165,13 @@ export default function About() {
                       Aptech Computer Education
                     </h1>
                     <h2 className="font-semibold">
-                      Information Technology Instructor
+                      Frontend Intern
                     </h2>
                     <h3 className="text-gray-400 font-semibold">
-                      May 2023 - Feb 2024
+                      May 2024 -  Aug 2025
                     </h3>
                     <p className="font-medium text-sm mt-5">
-                      Prompted students’ technological development, regularly
-                      assessing progress with material and adapting strategies
+                      Developed and implemented responsive web interfaces using HTML, CSS, JavaScript, and ReactJS. Collaborated with cross-functional teams to create user-friendly web applications.
                     </p>
                   </div>
                   <div className="bg-primary shadow-md p-5 md:w-[85%]">
@@ -180,14 +179,13 @@ export default function About() {
                       Aptech Computer Education
                     </h1>
                     <h2 className="font-semibold">
-                      Information Technology Instructor
+                      Frontend Intern
                     </h2>
                     <h3 className="text-gray-400 font-semibold">
-                      May 2023 - Feb 2024
+                      May 2024 - Aug 2024
                     </h3>
                     <p className="font-medium text-sm mt-5">
-                      Prompted students’ technological development, regularly
-                      assessing progress with material and adapting strategies
+                    Developed and implemented responsive web interfaces using HTML, CSS, JavaScript, and ReactJS. Collaborated with cross-functional teams to create user-friendly web applications.
                     </p>
                   </div>
                 </div>
