@@ -13,9 +13,9 @@ export default function About() {
   // })
   return (
     <div className="my-12 flex justify-center" id="about">
-      <div className="flex flex-col-reverse md:flex-row w-[90%] md:w-[75%] items-center md:gap-y-0 gap-y-10">
-        <div className="md:w-[45%]">
-            <img src="love.jpg" alt="" className='md:h-[500px] md:w-[370px] rounded' data-aos="fade-zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600" />
+      <div className="flex flex-col-reverse md:flex-row w-[90%] md:w-[75%] items-center md:gap-y-0 gap-y-10 justify-between">
+        <div className="md:w-[45%]" style={{backgroundImage: `url(love.jpg)`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', height: '500px', width: '370px'}} data-aos="fade-zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600">
+            {/* <img src="love.jpg" alt="" className='md:h-[500px] md:w-[370px] rounded' data-aos="fade-zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600" /> */}
         </div>
         <div className="md:w-[50%] text-secondary">
           <div className="flex gap-5 font-semibold">

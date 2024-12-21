@@ -28,8 +28,8 @@ export default function Contact() {
             <button type="submit" className='py-3 px-5 bg-secondary text-primary font-semibold rounded mt-5'>Submit</button>
           </form>
         </div>
-        <div className='md:w-[40%]'>
-          <img src="contact2.jpg" alt="" className='h-[450px] w-full' />
+        <div className='md:w-[40%] bg-cover bg-center bg-no-repeat' style={{backgroundImage:'url(contact2.jpg)'}}>
+          {/* <img src="contact2.jpg" alt="" className='h-[450px] w-full' /> */}
         </div>
       </div>
     </div>

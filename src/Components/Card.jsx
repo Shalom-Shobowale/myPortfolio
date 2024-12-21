@@ -6,9 +6,7 @@ export default function Card({image, text, link, textLink, about, tools,gitLink}
   return (
     <div className='flex justify-center mt-10'>
         <div className='bg-tertiary flex flex-col md:flex-row gap-12 text-secondary p-2 md:p-6 w-[90%] md:w-[80%] rounded-xl shadow-xl'>
-          <div className='md:w-[55%]'>
-            <img src={image} alt="firstProject.png" className='rounded-xl h-72' />
-          </div>
+          <div className='md:w-[55%] h-72 rounded-md' style={{backgroundImage: `url(${image})`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat'}}></div>
           <div className='md:w-[45%] flex flex-col justify-center'>
             <h1 className='font-bold'>{text}</h1>
             <a href={link} className='mt-1 hover:underline text-blue-700 text-sm font-semibold flex items-center gap-2'>
