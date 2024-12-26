@@ -8,7 +8,7 @@ export default function Service() {
             {/* <h1 className='font-semibold text-xl text-center'>These are My Expertises.</h1> */}
             <div className='flex md:flex-row flex-col gap-5 mt-6'>
                 <div className='bg-primary md:w-[32%] p-5 shadow-2xl rounded-md hover:shadow-secondary'>
-                    <h1 className='text-xl font-bold mb-4'>Website Design and Development
+                    <h1 className='text-xl font-bold mb-4'>Website Development
                     </h1>
                     <div className='font-semibold text-sm'>
                         <p className='mb-4'>Stay ahead of the digital curve leveraging cutting-edge technologies. As web developer i deliver:
