@@ -36,7 +36,7 @@ export default function Navbar() {
                     <ul className={`flex md:flex-row flex-col gap-5 md:gap-10 font-semibold md:bg-transparent bg-secondary backdrop:blur-md bg-opacity-80 absolute left-0 items-center md:top-7 md:justify-end top-20 w-full md:py-0 py-5 md:w-[90%] cursor-pointer ${menu ? "top-20" : "top-[-490px]"}`}>
                         <li><Link to="home" spy={true} smooth={true} offset={50} duration={500} >Home</Link></li>
                         <li><Link to="about" spy={true} smooth={true} offset={-100} duration={500} >About</Link></li>
-                        <li><Link to="service" spy={true} smooth={true} offset={-100} duration={500} >Service</Link></li>
+                        {/* <li><Link to="service" spy={true} smooth={true} offset={-100} duration={500} >Service</Link></li> */}
                         <li><Link to="portfolio" spy={true} smooth={true} offset={-100} duration={500} >Portfolio</Link></li>
                         <li><Link to="contact" spy={true} smooth={true} offset={-100} duration={500} >Contact</Link></li>
                     </ul>

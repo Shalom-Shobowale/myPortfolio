@@ -14,8 +14,7 @@ export default function About() {
   return (
     <div className="my-12 flex justify-center" id="about">
       <div className="flex flex-col-reverse md:flex-row w-[90%] md:w-[75%] items-center md:gap-y-0 gap-y-10 justify-between">
-        <div className="md:w-[45%]" style={{backgroundImage: `url(love.jpg)`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', height: '500px', width: '370px'}} data-aos="fade-zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600">
-            {/* <img src="love.jpg" alt="" className='md:h-[500px] md:w-[370px] rounded' data-aos="fade-zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600" /> */}
+        <div className="md:w-[45%]" style={{backgroundImage: `url(peace.jpg)`, backgroundSize: 'cover', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', height: '500px', width: '370px'}} data-aos="fade-zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600">
         </div>
         <div className="md:w-[50%] text-secondary">
           <div className="flex gap-5 font-semibold">
@@ -39,7 +38,7 @@ export default function About() {
             >
               Skills
             </button>
-            <button
+            {/* <button
               className={`p-3 rounded ${
                 open === 3
                   ? "bg-secondary text-primary"
@@ -48,12 +47,12 @@ export default function About() {
               onClick={() => handleClick(3)}
             >
               Experience
-            </button>
+            </button> */}
           </div>
           <div className="mt-7">
             <div className={`${open === 1 ? "inline-block" : "hidden"}`}>
               <h1 className='text-3xl font-bold'>I'm Shobowale Shallom</h1>
-              <p className="font-medium text-pretty mt-4">
+              <p className="font-medium mt-4">
                 A creative{" "}
                 <em>frontend developer</em> who loves solving problems through
                 design and technology. With a passion for building user-friendly
@@ -146,50 +145,10 @@ export default function About() {
                 </div>
               </div>
             </div>
-            <div className={`${open === 3 ? "inline-block" : "hidden"}`}>
-              <div className="flex">
-                <div className="hidden md:flex relative mr-10">
-                  <div className="h-48 w-1 bg-secondary absolute left-[8px] top-10"></div>
-                  <div className="h-48 w-1 bg-secondary absolute left-[8px] bottom-10"></div>
-                  <div>
-                    <button className="rounded-full bg-black h-5 w-5">1</button>
-                    <button className="rounded-full bg-black h-5 w-5 my-56">
-                      2
-                    </button>
-                    <button className="rounded-full bg-black h-5 w-5">3</button>
-                  </div>
-                </div>
-                <div className="">
-                  <div className="bg-primary shadow-md p-5 md:w-[85%] mb-7">
-                    <h1 className="font-bold text-xl">
-                      Aptech Computer Education
-                    </h1>
-                    <h2 className="font-semibold">
-                      Frontend Intern
-                    </h2>
-                    <h3 className="text-gray-400 font-semibold">
-                      May 2024 -  Aug 2025
-                    </h3>
-                    <p className="font-medium text-sm mt-5">
-                      Developed and implemented responsive web interfaces using HTML, CSS, JavaScript, and ReactJS. Collaborated with cross-functional teams to create user-friendly web applications.
-                    </p>
-                  </div>
-                  <div className="bg-primary shadow-md p-5 md:w-[85%]">
-                    <h1 className="font-bold text-xl">
-                      Aptech Computer Education
-                    </h1>
-                    <h2 className="font-semibold">
-                      Frontend Intern
-                    </h2>
-                    <h3 className="text-gray-400 font-semibold">
-                      May 2024 - Aug 2024
-                    </h3>
-                    <p className="font-medium text-sm mt-5">
-                    Developed and implemented responsive web interfaces using HTML, CSS, JavaScript, and ReactJS. Collaborated with cross-functional teams to create user-friendly web applications.
-                    </p>
-                  </div>
-                </div>
-              </div>
+           
+
+            <div>
+              
             </div>
           </div>
         </div>

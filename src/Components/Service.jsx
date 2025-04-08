@@ -7,7 +7,7 @@ export default function Service() {
             <h1 className='text-5xl font-bold text-center mb-4'>Services</h1>
             {/* <h1 className='font-semibold text-xl text-center'>These are My Expertises.</h1> */}
             <div className='flex md:flex-row flex-col gap-5 mt-6'>
-                <div className='bg-primary md:w-[32%] p-5 shadow-2xl rounded-md hover:shadow-secondary'>
+                <div className='bg-primary md:w-[32%] p-5 rounded-md'>
                     <h1 className='text-xl font-bold mb-4'>Website Development
                     </h1>
                     <div className='font-semibold text-sm'>
@@ -20,7 +20,7 @@ export default function Service() {
                         <p className='mt-4'>Let's bring your online vision to life!</p>
                     </div>
                 </div>
-                <div className='bg-primary shadow-2xl rounded-md md:w-[32%] p-5 hover:shadow-secondary'>
+                <div className='bg-primary rounded-md md:w-[32%] p-5'>
                     <h1 className='text-xl font-bold mb-4'> E-commerce Solutions </h1>
                     <div className='font-semibold text-sm'>
                         <p className='mb-4'>Transform your online store into a seamless shopping experience with our expert E-commerce Solutions.I ensure effortless navigation, secure checkout processes, and engaging product showcases. With expertise in:
@@ -33,7 +33,7 @@ export default function Service() {
                         <p className='mt-4'>Elevate your brand's online presence.</p>
                     </div>
                 </div>
-                <div className='bg-primary md:w-[32%] p-5 shadow-2xl hover:shadow-secondary rounded-md'>
+                <div className='bg-primary md:w-[32%] p-5  rounded-md'>
                     <h1 className='text-xl font-bold mb-4'>Communication and Collaboration
                     </h1>
                     <div className='text-sm font-semibold'>

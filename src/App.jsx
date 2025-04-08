@@ -4,14 +4,13 @@ import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
 import Navbar from "./Components/Navbar";
 import Port from "./Components/Port";
-import Service from "./Components/Service";
+// import Service from "./Components/Service";
 
 function App(){
   return(
     <>
       <Navbar />
       <About />
-      <Service />
       <Port/>
       <Card image="firstProject.png" text="Alberto Wrist Watch" link="https://alberto-watch.vercel.app/" textLink="https://alberto-watch.vercel.app/" about="A Wrist Watch website,focused on delivering a refined shopping experience, this wristwatch website blends minimalist design with functionality.  " tools="TailwindCss and JavaScript" gitLink="https://github.com/Shalom-Shobowale/Alberto-watch"/>
       <Card image="forthP.png" text="Burger House" link="https://burger-react-silk.vercel.app/" textLink="https://burger-react-silk.vercel.app/" about="Burger website, bringing the fun of a burger joint online, this site combines a vibrant design with seamless functionality. " tools="TailwindCss and ReactJs" gitLink="https://github.com/Shalom-Shobowale/Burger-react"/>

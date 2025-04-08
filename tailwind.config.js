@@ -13,7 +13,7 @@ export default {
         bgBody:"#f8f9fa"
       },
       fontFamily:{
-        Mont:["Montserrat", "open sans"],
+        Mont:["Roboto", "open sans"],
         Pacifico:["Pacifico", "open sans"]
 
       },

@@ -10,20 +10,20 @@ export default function Contact() {
             <div className='flex flex-row gap-4'>
               <div className='flex flex-col w-[50%]'>
                 <label htmlFor="" className='font-semibold'>Name</label>
-                <input type="text" name="Name" id="" className='border-b-2 border-secondary bg-bgBody focus:outline-none p-2' />
+                <input type="text" name="Name" id="" required className='border-b-2 border-secondary bg-bgBody focus:outline-none p-2' />
               </div>
               <div className='flex flex-col w-[50%]'>
                 <label htmlFor="email" className='font-semibold'>Email</label>
-                <input type="email" name="E-mail" id="" className='border-b-2 border-secondary w-[100%] bg-bgBody focus:outline-none p-2' />
+                <input type="email" name="E-mail" id="" required className='border-b-2 border-secondary w-[100%] bg-bgBody focus:outline-none p-2' />
               </div>
             </div>
             <div className='flex flex-col my-8'>
               <label htmlFor="" className='font-semibold'>Subject</label>
-              <input type="text" name="Subject" id="" className='border-b-2 border-secondary bg-bgBody focus:outline-none p-2' />
+              <input type="text" name="Subject" required id="" className='border-b-2 border-secondary bg-bgBody focus:outline-none p-2' />
             </div>
             <div className='flex flex-col'>
               <label htmlFor="" className='font-semibold'>Message</label>
-              <textarea name="Message" id="" cols="5" rows="2" className='border-b-2 border-secondary bg-bgBody focus:outline-none px-2'></textarea>
+              <textarea name="Message" id="" required cols="5" rows="2" className='border-b-2 border-secondary bg-bgBody focus:outline-none px-2'></textarea>
             </div>
             <button type="submit" className='py-3 px-5 bg-secondary text-primary font-semibold rounded mt-5'>Submit</button>
           </form>

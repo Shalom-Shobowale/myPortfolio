@@ -7,11 +7,11 @@ import { Link } from 'react-scroll';
 export default function Home() {
   return (
     <div className='flex justify-center items-center' id='home'>
-        <div className='w-[90%] md:w-[80%] flex items-center text-center h-[96vh] my-auto'>
+        <div className='w-[90%] md:w-[80%] flex items-center justify-center text-center h-[96vh] my-auto'>
             <div className='md:mt-0 mt-28 text-primary'>
               <h1 className='text-5xl font-bold'>Hi, I'm <span className=''>Shallom,</span></h1>
-              <h3 className='font-bold text-2xl my-3'>A Frontend Web Developer</h3>
-              <p className='text-pretty font-semibold'>I love transforming ideas into responsive, user-friendly web applications that provide exceptional user experiences, Skilled in HTML, CSS, TailwindCss, JavaScript, and ReactJs.</p>
+              <h3 className='font-bold text-2xl my-3'>A Frontend Developer</h3>
+              <p className='text-pretty font-semibold'>I love transforming ideas into responsive, user-friendly web applications that provide <br/>exceptional user experiences, Skilled in HTML, CSS, TailwindCss, JavaScript, and ReactJs.</p>
               <div className='flex justify-center gap-5 text-xl my-5'>
                   <a href='https://github.com/Shalom-Shobowale' className='w-8 h-8 flex justify-center items-center rounded-full border-2 border-secondary hover:bg-primary hover:text-secondary hover:border-none duration-1000'><FaGithub /></a>
                   <a href='https://twitter.com' className='w-8 h-8 flex justify-center items-center rounded-full border-2 border-secondary hover:bg-primary hover:text-secondary hover:border-none duration-1000'><FaTwitter /></a>
