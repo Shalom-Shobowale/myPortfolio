@@ -65,19 +65,21 @@ export default function About() {
           <div className="mt-7">
             <div className={`${open === 1 ? "inline-block" : "hidden"}`}>
               <h1 className="text-3xl font-bold">I'm Shobowale Shallom</h1>
-              <p className="font-medium mt-4">
-                A creative <em>frontend developer</em> who loves solving
-                problems through design and technology. With a passion for
-                building user-friendly applications, I combine technical skills
-                with a flair for creativity, making the digital world more
-                engaging and accessible.
+              <p className="font-medium mt-4 text-justify text-pretty">
+                A creative <em>Full Stack Developer</em> with a passion for
+                solving complex problems through design and technology. I
+                specialize in building intuitive, user-friendly applications
+                that blend functionality with engaging experiences, making the
+                digital world more accessible and impactful.
               </p>
-              <p className="font-medium text-pretty my-4">
-                My goal is to use my skills as a frontend developer to solve
-                real time world problem to make life easier for people, and to
-                collaborate with other developers to build innovative solutions
-                as a team.
+              <p className="font-medium text-pretty my-4 text-justify">
+                My objective is to leverage my full stack development skills to
+                create practical, real-world solutions that enhance everyday
+                life. I aim to collaborate with forward-thinking teams to build
+                innovative, scalable applications that drive meaningful change
+                and continuous improvement.
               </p>
+
               <div>
                 <div className="flex gap-3 items-center font-semibold">
                   <p className="text-xl">
