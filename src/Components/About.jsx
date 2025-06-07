@@ -165,7 +165,7 @@ export default function About() {
                   </div>
                 </div>
                 <div className="relative">
-                  <div className="bg-primary shadow-md flex justify-center items-center h-20 w-20 rounded-md bg-[url('nextjs.png')] bg-center bg-cover bg-no-repeat">
+                  <div className="bg-primary shadow-md flex justify-center items-center h-20 w-20 rounded-md bg-center bg-cover bg-no-repeat" style={{backgroundImage: `url(nextjs.png)`}}>
                     {/* <img src="nextjs.png" alt="" className="h-20 w-20"/> */}
                   </div>
                   <div className="absolute h-20 w-20 left-2 top-0 opacity-0 hover:opacity-100">
@@ -176,7 +176,7 @@ export default function About() {
                 </div>
 
                 <div className="relative">
-                  <div className="bg-primary shadow-md flex justify-center items-center h-20 w-20 rounded-md bg-[url('mongodb.webp')] bg-center bg-cover bg-no-repeat">
+                  <div className="bg-primary shadow-md flex justify-center items-center h-20 w-20 rounded-md bg-center bg-cover bg-no-repeat" style={{backgroundImage: `url(mongodb.webp)`}}>
                     {/* <img src="nextjs.png" alt="" className="h-20 w-20"/> */}
                   </div>
                   <div className="absolute h-20 w-20 left-4 top-0 opacity-0 hover:opacity-100">
@@ -187,7 +187,7 @@ export default function About() {
                 </div>
 
                 <div className="relative">
-                  <div className="bg-primary shadow-md flex justify-center items-center h-20 w-20 rounded-md bg-[url('nodejs.png')] bg-center bg-cover bg-no-repeat">
+                  <div className="bg-primary shadow-md flex justify-center items-center h-20 w-20 rounded-md bg-center bg-cover bg-no-repeat" style={{backgroundImage: `url('nodejs.png')`}}>
                     {/* <img src="nextjs.png" alt="" className="h-20 w-20"/> */}
                   </div>
                   <div className="absolute h-20 w-20 left-4 top-0 opacity-0 hover:opacity-100">
@@ -198,8 +198,6 @@ export default function About() {
                 </div>
               </div>
             </div>
-
-            <div></div>
           </div>
         </div>
       </div>
