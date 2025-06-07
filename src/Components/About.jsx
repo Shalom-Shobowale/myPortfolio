@@ -192,7 +192,7 @@ export default function About() {
                   </div>
                   <div className="absolute h-20 w-20 left-4 top-0 opacity-0 hover:opacity-100">
                     <p className="font-semibold py-1 px-4 bg-primary text-center shadow-md shadow-secondary rounded-md absolute top-24 right-1">
-                      Nodet.js
+                      Node.js
                     </p>
                   </div>
                 </div>
