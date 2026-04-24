@@ -1,0 +1,142 @@
+[
+  {
+    "id": 1,
+    "title": "Alberto Wrist Watch",
+    "category": "frontend",
+    "image": "/firstProject.png",
+    "liveLink": "https://alberto-watch.vercel.app/",
+    "githubLink": "https://github.com/Shalom-Shobowale/Alberto-watch",
+    "description": "A premium wristwatch e-commerce platform focused on delivering a refined shopping experience with minimalist design and seamless functionality.",
+    "technologies": ["TailwindCSS", "JavaScript", "HTML5", "CSS3"],
+    "features": [
+      "Product Gallery",
+      "Shopping Cart",
+      "Responsive Design",
+      "Smooth Animations"
+    ],
+    "role": "Frontend Developer",
+    "year": "2024"
+  },
+  {
+    "id": 2,
+    "title": "Burger House",
+    "category": "frontend",
+    "image": "/forthP.png",
+    "liveLink": "https://burger-react-silk.vercel.app/",
+    "githubLink": "https://github.com/Shalom-Shobowale/Burger-react",
+    "description": "A vibrant restaurant website that brings the fun of a burger joint online with an engaging user interface and smooth ordering experience.",
+    "technologies": ["React", "TailwindCSS", "JavaScript", "React Router"],
+    "features": [
+      "Menu Display",
+      "Order System",
+      "Responsive Layout",
+      "Interactive UI"
+    ],
+    "role": "Frontend Developer",
+    "year": "2024"
+  },
+  {
+    "id": 3,
+    "title": "Travel Smart",
+    "category": "frontend",
+    "image": "/fifthP.png",
+    "liveLink": "https://travel-smart-umber.vercel.app/",
+    "githubLink": "https://github.com/Shalom-Shobowale/Travel-smart",
+    "description": "A comprehensive travel planning platform designed to simplify trip organization for all types of travelers with intuitive tools.",
+    "technologies": ["React", "TailwindCSS", "JavaScript", "API Integration"],
+    "features": [
+      "Destination Search",
+      "Itinerary Builder",
+      "Weather Info",
+      "Booking System"
+    ],
+    "role": "Frontend Developer",
+    "year": "2024"
+  },
+  {
+    "id": 4,
+    "title": "Fitness Tracker",
+    "category": "fullstack",
+    "image": "/fitness.png",
+    "liveLink": "https://fitness-frontend-b1am.onrender.com/",
+    "githubLink": "https://github.com/Shalom-Shobowale/fitness",
+    "description": "A full-stack fitness application that helps users track workouts, monitor progress, and stay motivated on their health journey.",
+    "technologies": [
+      "React",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "TailwindCSS",
+      "JWT"
+    ],
+    "features": [
+      "User Auth",
+      "Workout Logs",
+      "Progress Charts",
+      "Personalized Plans"
+    ],
+    "role": "Full Stack Developer",
+    "year": "2024"
+  },
+  {
+    "id": 5,
+    "title": "Vegefoods",
+    "category": "ecommerce",
+    "image": "/vege.png",
+    "liveLink": "https://vegetables-rho.vercel.app/",
+    "githubLink": "https://github.com/Shalom-Shobowale/Vegetables",
+    "description": "A modern e-commerce platform specializing in fresh vegetables and fruits with secure payments and seamless checkout experience.",
+    "technologies": [
+      "Next.js",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "TailwindCSS",
+      "Stripe"
+    ],
+    "features": [
+      "Product Catalog",
+      "Shopping Cart",
+      "Payment Gateway",
+      "Order Tracking"
+    ],
+    "role": "Full Stack Developer",
+    "year": "2024"
+  },
+  {
+    "id": 6,
+    "title": "FordLand Properties",
+    "category": "frontend",
+    "image": "/secondP.png",
+    "liveLink": "https://fordland-properties.vercel.app/",
+    "githubLink": "https://github.com/Shalom-Shobowale/Real-estate",
+    "description": "A modern real estate platform showcasing properties with advanced search filters and virtual tour capabilities.",
+    "technologies": ["TailwindCSS", "JavaScript", "HTML5", "CSS3"],
+    "features": [
+      "Property Listings",
+      "Search Filters",
+      "Image Gallery",
+      "Contact Form"
+    ],
+    "role": "Frontend Developer",
+    "year": "2024"
+  },
+  {
+    "id": 7,
+    "title": "Guessing Game",
+    "category": "frontend",
+    "image": "/thirdP.png",
+    "liveLink": "https://guessing-game-cyan.vercel.app/",
+    "githubLink": "https://github.com/Shalom-Shobowale/guessing-game",
+    "description": "An interactive number guessing game that tests your luck and intuition with engaging gameplay mechanics.",
+    "technologies": ["HTML5", "CSS3", "JavaScript", "DOM Manipulation"],
+    "features": [
+      "Random Number Generation",
+      "Score Tracking",
+      "Hint System",
+      "Responsive Design"
+    ],
+    "role": "Frontend Developer",
+    "year": "2023"
+  }
+]

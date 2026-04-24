@@ -5,25 +5,36 @@
 @tailwind utilities;
 
 @layer base {
-  body {
+  /* REMOVE THIS CONFLICTING BODY STYLE */
+  /* body {
     @apply tracking-wide text-secondary font-Mont bg-bgBody;
+  } */
+
+  /* Smooth transitions for dark mode */
+  * {
+    @apply transition-colors duration-200;
+  }
+
+  body {
+    @apply bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 font-Mont tracking-wide;
   }
 }
+
 @layer utilities {
   .skills {
     @apply w-full max-w-[600px] px-2 py-4;
   }
 
   .skill_name {
-    @apply text-xl font-medium text-secondary mx-auto;
+    @apply text-xl font-medium text-secondary dark:text-gray-200 mx-auto;
   }
 
   .skill_bar {
-    @apply h-4 bg-tertiary rounded-md;
+    @apply h-4 bg-tertiary dark:bg-gray-700 rounded-md;
   }
 
   .skill_per {
-    @apply h-4 bg-secondary rounded-md relative animate-fillbars;
+    @apply h-4 bg-secondary dark:bg-blue-500 rounded-md relative animate-fillbars;
 
     &::before {
       content: attr(per);
@@ -58,7 +69,62 @@
   }
 
   .no-scrollbar {
-    -ms-overflow-style: none; /* IE and Edge */
-    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;
+    scrollbar-width: none;
   }
+
+  /* Glass morphism effect */
+  .glass {
+    @apply bg-white/10 dark:bg-gray-900/10 backdrop-blur-md;
+  }
+
+  /* Gradient text */
+  .gradient-text {
+    @apply bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent;
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-gradient {
+  background-size: 200% auto;
+  animation: gradient 3s linear infinite;
+}
+
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+.animation-delay-4000 {
+  animation-delay: 4s;
+}
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
