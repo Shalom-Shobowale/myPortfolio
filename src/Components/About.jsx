@@ -231,7 +231,7 @@ export default function About() {
                 </motion.div>
 
                 <motion.div
-                  className="absolute -bottom-1 left-4 right-6 bg-white dark:bg-gray-800 rounded-xl shadow-xl p-4"
+                  className="absolute -bottom-20 lg:-bottom-1 left-4 right-6 bg-white dark:bg-gray-800 rounded-xl shadow-xl p-4"
                   initial={{ y: 50, opacity: 0 }}
                   animate={{ y: 0, opacity: 1 }}
                   transition={{ delay: 0.5 }}
@@ -259,7 +259,7 @@ export default function About() {
           <div className="lg:w-7/12 min-w-0">
             <motion.div
               variants={itemVariants}
-              className="flex gap-3 mb-8 border-b border-gray-200 dark:border-gray-700"
+              className="flex flex-wrap lg:flex-row lg:justify-start justify-center gap-5 lg:gap-3 mb-8 border-b border-gray-200 dark:border-gray-700"
             >
               {[
                 { id: 1, label: `About Me`, icon: <BsBookFill /> },
@@ -271,7 +271,7 @@ export default function About() {
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   onClick={() => handleTabClick(tab.id)}
-                  className={`lg:px-6 lg:py-3 rounded-t-lg font-semibold transition-all duration-300 flex items-center gap-1 md:gap-2 ${
+                  className={`lg:px-6 py-3 rounded-t-lg font-semibold transition-all duration-300 flex items-center gap-1 md:gap-2 ${
                     openTab === tab.id
                       ? "bg-gradient-to-r from-blue-600 to-purple-600 text-white shadow-lg"
                       : "text-gray-600 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-200"
@@ -385,7 +385,7 @@ export default function About() {
                           Experience
                         </p>
                         <p className="font-semibold text-gray-800 dark:text-gray-200">
-                          2+ Years Professional
+                          Professional
                         </p>
                       </div>
                     </div>

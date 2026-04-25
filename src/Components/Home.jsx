@@ -287,7 +287,7 @@ export default function Home() {
 
         {/* Scroll Down Indicator */}
         <motion.div
-          className="absolute bottom-8 left-36 lg:left-1/2 transform -translate-x-1/2"
+          className="absolute bottom-8 left-[38%] lg:left-1/2 transform -translate-x-1/2"
           animate={{ y: [0, 10, 0] }}
           transition={{ duration: 2, repeat: Infinity }}
         >

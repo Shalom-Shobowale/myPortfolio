@@ -1,6 +1,67 @@
 [
   {
     "id": 1,
+    "title": "Adunni Trading Hub",
+    "category": "fullstack",
+    "image": "/project.png",
+    "liveLink": "https://www.adunnitradinghub.com/",
+    "githubLink": "https://github.com/Shalom-Shobowale/adunniTradingHub",
+    "description": "Adunni Trading Hub is an online marketplace offering hygienically processed ponmo, delivering fresh, quality cow skin conveniently to customers with reliable service and easy ordering.",
+    "technologies": [
+      "TailwindCSS",
+      "React",
+      "HTML5",
+      "Node.js",
+      "Express",
+      "PostgreSQL",
+      "JWT"
+    ],
+    "features": [
+      "Product Section",
+      "Shopping Cart",
+      "Responsive Design",
+      "Smooth Animations",
+      "Payment Gateway",
+      "Order Tracking",
+      "Admin Dashboard",
+      "User Authentication"
+    ],
+    "role": "Full Stack Developer",
+    "year": "2025"
+  },
+  {
+    "id": 2,
+    "title": "Bereoth Investment Limited",
+    "category": "fullstack",
+    "image": "/project1.png",
+    "liveLink": "https://www.bereoth.com/",
+    "githubLink": "https://github.com/Shalom-Shobowale/Bereoth-",
+    "description": "Bereoth Invested Limited is a platform offering separate agrivest opportunities for crop investment returns and flexible real estate plans for gradual land ownership through installment payments.",
+    "technologies": [
+      "TailwindCSS",
+      "React",
+      "HTML5",
+      "Node.js",
+      "Express",
+      "PostgreSQL",
+      "JWT"
+    ],
+    "features": [
+      "Property Listings",
+      "Responsive Design",
+      "Smooth Animations",
+      "Admin Dashboard",
+      "User Authentication",
+      "Contact Form",
+      "Blog Section",
+      "Newsletter Subscription",
+      "Social Media Integration"
+    ],
+    "role": "Full Stack Developer",
+    "year": "2025"
+  },
+  {
+    "id": 3,
     "title": "Alberto Wrist Watch",
     "category": "frontend",
     "image": "/firstProject.png",
@@ -18,7 +79,7 @@
     "year": "2024"
   },
   {
-    "id": 2,
+    "id": 4,
     "title": "Burger House",
     "category": "frontend",
     "image": "/forthP.png",
@@ -36,7 +97,7 @@
     "year": "2024"
   },
   {
-    "id": 3,
+    "id": 5,
     "title": "Travel Smart",
     "category": "frontend",
     "image": "/fifthP.png",
@@ -54,7 +115,7 @@
     "year": "2024"
   },
   {
-    "id": 4,
+    "id": 6,
     "title": "Fitness Tracker",
     "category": "fullstack",
     "image": "/fitness.png",
@@ -79,7 +140,7 @@
     "year": "2024"
   },
   {
-    "id": 5,
+    "id": 7,
     "title": "Vegefoods",
     "category": "ecommerce",
     "image": "/vege.png",
@@ -104,7 +165,7 @@
     "year": "2024"
   },
   {
-    "id": 6,
+    "id": 8,
     "title": "FordLand Properties",
     "category": "frontend",
     "image": "/secondP.png",
@@ -122,7 +183,7 @@
     "year": "2024"
   },
   {
-    "id": 7,
+    "id": 9,
     "title": "Guessing Game",
     "category": "frontend",
     "image": "/thirdP.png",
