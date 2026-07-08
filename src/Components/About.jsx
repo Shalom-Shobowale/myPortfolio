@@ -165,7 +165,7 @@ export default function About() {
     },
     {
       icon: FiAward,
-      value: "5+",
+      value: "3+",
       label: "Certifications",
       color: "text-purple-500",
     },
