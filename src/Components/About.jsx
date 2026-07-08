@@ -205,11 +205,11 @@ export default function About() {
             className="w-full lg:w-5/12 lg:sticky lg:top-24"
           >
             <div className="relative">
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl bg-yellow-500">
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl lg:h-[70vh] h-[55vh]">
                 <div
-                  className="h-[300px] sm:h-[400px] lg:h-[500px] w-full rounded-2xl bg-cover bg-center"
+                  className="h-[415px] sm:h-[400px] lg:h-[500px] w-full rounded-2xl bg-cover bg-center"
                   style={{
-                    backgroundImage: `url(/Shallom.jpeg)`,
+                    backgroundImage: `url(/Shalom.png)`,
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                   }}
@@ -231,7 +231,7 @@ export default function About() {
                 </motion.div>
 
                 <motion.div
-                  className="absolute -bottom-20 lg:-bottom-1 left-4 right-6 bg-white dark:bg-gray-800 rounded-xl shadow-xl p-4"
+                  className="absolute -bottom-2 lg:-bottom-1 left-4 right-6 bg-white dark:bg-gray-800 rounded-xl shadow-xl p-4"
                   initial={{ y: 50, opacity: 0 }}
                   animate={{ y: 0, opacity: 1 }}
                   transition={{ delay: 0.5 }}
@@ -271,7 +271,7 @@ export default function About() {
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   onClick={() => handleTabClick(tab.id)}
-                  className={`lg:px-6 py-3 rounded-t-lg font-semibold transition-all duration-300 flex items-center gap-1 md:gap-2 ${
+                  className={`lg:px-6 py-3 px-4 rounded-t-lg font-semibold transition-all duration-300 flex items-center gap-1 md:gap-2 ${
                     openTab === tab.id
                       ? "bg-gradient-to-r from-blue-600 to-purple-600 text-white shadow-lg"
                       : "text-gray-600 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-200"
