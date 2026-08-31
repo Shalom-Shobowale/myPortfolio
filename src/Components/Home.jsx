@@ -135,7 +135,7 @@ export default function Home() {
               variants={itemVariants}
               className="flex flex-wrap gap-3 mb-8 justify-center md:justify-start"
             >
-              {["React", "Node.js", "MongoDB", "TailwindCSS", "Next.js"].map(
+              {["MERN Stack","Python", "Django", "Supabase", "PostgreSQL", "MySQL"].map(
                 (tech, index) => (
                   <motion.span
                     key={tech}
