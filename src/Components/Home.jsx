@@ -117,7 +117,7 @@ export default function Home() {
               className="text-2xl md:text-3xl font-bold mb-6 text-white dark:text-gray-300"
             >
               <span className="inline-block border-r-2 border-purple-600 pr-2 animate-pulse">
-                Full-Stack Developer
+                Web Developer
               </span>
             </motion.h3>
 

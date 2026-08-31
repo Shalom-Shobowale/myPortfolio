@@ -2,14 +2,9 @@ import React, { useState, useEffect } from "react";
 import {
   FaPhone,
   FaMapMarkerAlt,
-  FaCode,
-  FaLaptopCode,
-  FaDatabase,
-  FaCloud,
   FaGithub,
   FaLinkedin,
   FaNodeJs,
-  FaLeaf,
   FaStar,
   FaHandsHelping,
   FaLightbulb,
@@ -20,21 +15,18 @@ import {
   BsBookFill,
   BsFlagFill,
   BsCpu,
-  BsLightningFill,
-  BsBoxSeam,
   BsTriangleFill,
 } from "react-icons/bs";
-import { SiMongodb, SiTailwindcss, SiTypescript } from "react-icons/si";
+import { SiMongodb, SiTailwindcss, SiTypescript, SiPython, SiDjango, SiSupabase, SiPostgresql, SiMysql } from "react-icons/si";
 import { DiReact, DiJavascript1 } from "react-icons/di";
 import {
   MdEmail,
-  MdSchool,
   MdWork,
   MdVerified,
   MdOutlineSchool,
   MdOutlineCode,
 } from "react-icons/md";
-import { FiAward, FiUsers, FiHeart, FiLayers } from "react-icons/fi";
+import { FiAward, FiUsers, FiHeart, FiLayers, } from "react-icons/fi";
 import { motion, AnimatePresence } from "framer-motion";
 
 export default function About() {
@@ -148,6 +140,42 @@ export default function About() {
       color: "from-blue-600 to-indigo-500",
       level: 75,
     },
+    {
+      name: "Express.js",
+      icon: <FiLayers />,
+      color: "from-gray-600 to-gray-800",
+      level: 80,
+    },
+    {
+      name: "Python",
+      icon: <SiPython />,
+      color: "from-yellow-400 to-orange-500",
+      level: 70,
+    },
+    {
+      name: "Django",
+      icon: <SiDjango />,
+      color: "from-green-600 to-green-800",
+      level: 70,
+    },
+    {
+      name: "Supabase",
+      icon: <SiSupabase />,
+      color: "from-green-500 to-emerald-500",
+      level: 75,
+    }, 
+    {
+      name: "PostgreSQL",
+      icon: <SiPostgresql />,
+      color: "from-blue-600 to-blue-800",
+      level: 75,
+    }, 
+    {
+      name: "SQL",
+      icon: <SiMysql />,
+      color: "from-blue-500 to-blue-700",
+      level: 70,
+    }
   ];
 
   const achievements = [
@@ -165,7 +193,7 @@ export default function About() {
     },
     {
       icon: FiAward,
-      value: "3+",
+      value: "2+",
       label: "Certifications",
       color: "text-purple-500",
     },
@@ -297,7 +325,7 @@ export default function About() {
                       I'm Shobowale Shallom
                     </h3>
                     <div className="space-y-4 text-gray-600 dark:text-gray-400 leading-relaxed break-words">
-                      <p className="text-justify">
+                      <p className="text-medium">
                         A passionate{" "}
                         <span className="font-semibold text-blue-600 dark:text-blue-400 ">
                           Full Stack Developer
@@ -307,14 +335,14 @@ export default function About() {
                         responsive web applications that deliver exceptional
                         user experiences.
                       </p>
-                      <p className="text-justify">
+                      <p className="text-medium">
                         With expertise across the entire development stack, I
                         bridge the gap between beautiful frontend interfaces and
                         robust backend systems. My approach combines technical
                         excellence with creative problem-solving to create
                         solutions that truly make a difference.
                       </p>
-                      <p className="text-justify">
+                      <p className="text-medium">
                         When I'm not coding, you'll find me exploring new
                         technologies, contributing to open-source projects, or
                         sharing knowledge with the developer community. I
@@ -354,10 +382,10 @@ export default function About() {
                           Email
                         </p>
                         <a
-                          href="mailto:shalomshobowale65@gmail.com"
+                          href="mailto:shobowaleshallom@gmail.com"
                           className="font-semibold text-gray-800 dark:text-gray-200 hover:text-purple-600 break-all"
                         >
-                          shalomshobowale65@gmail.com
+                          shobowaleshallom@gmail.com
                         </a>
                       </div>
                     </div>
@@ -480,6 +508,7 @@ export default function About() {
                         "Git",
                         "VS Code",
                         "Postman",
+                        "Tunder Client",
                         "Docker",
                         "AWS",
                         "Figma",

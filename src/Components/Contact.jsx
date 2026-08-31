@@ -1,23 +1,30 @@
-import React, { useState } from 'react';
-import { motion } from 'framer-motion';
-import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaPaperPlane, FaCheckCircle, FaSpinner } from 'react-icons/fa';
-import { MdMessage, MdPerson, MdSubject } from 'react-icons/md';
-import { FaGithub, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
+import React, { useState } from "react";
+import { motion } from "framer-motion";
+import {
+  FaEnvelope,
+  FaPhone,
+  FaMapMarkerAlt,
+  FaPaperPlane,
+  FaCheckCircle,
+  FaSpinner,
+} from "react-icons/fa";
+import { MdMessage, MdPerson, MdSubject } from "react-icons/md";
+import { FaGithub, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: ''
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitStatus, setSubmitStatus] = useState(null); 
+  const [submitStatus, setSubmitStatus] = useState(null);
 
   const handleChange = (e) => {
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value
+      [e.target.name]: e.target.value,
     });
   };
 
@@ -27,25 +34,25 @@ export default function Contact() {
     setSubmitStatus(null);
 
     try {
-      const response = await fetch('https://formspree.io/f/mpwzpyjj', {
-        method: 'POST',
+      const response = await fetch("https://formspree.io/f/mpwzpyjj", {
+        method: "POST",
         headers: {
-          'Content-Type': 'application/json',
-          'Accept': 'application/json'
+          "Content-Type": "application/json",
+          Accept: "application/json",
         },
-        body: JSON.stringify(formData)
+        body: JSON.stringify(formData),
       });
 
       if (response.ok) {
-        setSubmitStatus('success');
-        setFormData({ name: '', email: '', subject: '', message: '' });
+        setSubmitStatus("success");
+        setFormData({ name: "", email: "", subject: "", message: "" });
         setTimeout(() => setSubmitStatus(null), 5000);
       } else {
-        setSubmitStatus('error');
+        setSubmitStatus("error");
         setTimeout(() => setSubmitStatus(null), 5000);
       }
     } catch (error) {
-      setSubmitStatus('error');
+      setSubmitStatus("error");
       setTimeout(() => setSubmitStatus(null), 5000);
     } finally {
       setIsSubmitting(false);
@@ -58,9 +65,9 @@ export default function Contact() {
       opacity: 1,
       transition: {
         staggerChildren: 0.2,
-        delayChildren: 0.3
-      }
-    }
+        delayChildren: 0.3,
+      },
+    },
   };
 
   const itemVariants = {
@@ -68,8 +75,8 @@ export default function Contact() {
     visible: {
       y: 0,
       opacity: 1,
-      transition: { type: 'spring', stiffness: 100, damping: 12 }
-    }
+      transition: { type: "spring", stiffness: 100, damping: 12 },
+    },
   };
 
   const imageVariants = {
@@ -77,32 +84,32 @@ export default function Contact() {
     visible: {
       x: 0,
       opacity: 1,
-      transition: { type: 'spring', stiffness: 100, damping: 12, delay: 0.2 }
-    }
+      transition: { type: "spring", stiffness: 100, damping: 12, delay: 0.2 },
+    },
   };
 
   const contactInfo = [
     {
       icon: FaEnvelope,
       title: "Email",
-      value: "shalomshobowale65@gmail.com",
-      link: "mailto:shalomshobowale65@gmail.com",
-      color: "from-blue-500 to-cyan-500"
+      value: "shobowaleshallom@gmail.com",
+      link: "mailto:shobowaleshallom@gmail.com",
+      color: "from-blue-500 to-cyan-500",
     },
     {
       icon: FaPhone,
       title: "Phone",
       value: "+234 903 818 6039",
       link: "tel:+2349038186039",
-      color: "from-green-500 to-emerald-500"
+      color: "from-green-500 to-emerald-500",
     },
     {
       icon: FaMapMarkerAlt,
       title: "Location",
       value: "Lagos, Nigeria",
       link: null,
-      color: "from-purple-500 to-pink-500"
-    }
+      color: "from-purple-500 to-pink-500",
+    },
   ];
 
   return (
@@ -120,18 +127,24 @@ export default function Contact() {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <span className="inline-block px-4 py-2 bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-full text-sm font-semibold text-gray-700 dark:text-gray-300 mb-4">
-            📬 Get in Touch
-          </span>
+          <div className="flex gap-3 align-center justify-center">
+            <div className="px-4 py-2 bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-full text-sm font-semibold text-gray-700 dark:text-gray-300 mb-4">
+              <div className="flex items-center gap-2">
+                <FaEnvelope /> <p>Get in Touch</p>
+              </div>
+            </div>
+          </div>
+
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            Let's Work{' '}
+            Let's Work{" "}
             <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
               Together
             </span>
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600 mx-auto rounded-full"></div>
           <p className="mt-4 text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-            Have a project in mind? I'd love to hear about it. Let's create something amazing together.
+            Have a project in mind? I'd love to hear about it. Let's create
+            something amazing together.
           </p>
         </motion.div>
 
@@ -151,9 +164,13 @@ export default function Contact() {
                   whileHover={{ scale: 1.02, y: -5 }}
                   className="group relative bg-white dark:bg-gray-800 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden"
                 >
-                  <div className={`absolute inset-0 bg-gradient-to-r ${info.color} opacity-0 group-hover:opacity-10 transition-opacity duration-300`}></div>
+                  <div
+                    className={`absolute inset-0 bg-gradient-to-r ${info.color} opacity-0 group-hover:opacity-10 transition-opacity duration-300`}
+                  ></div>
                   <div className="relative p-6 flex items-center gap-6">
-                    <div className={`w-14 h-14 bg-gradient-to-r ${info.color} rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300`}>
+                    <div
+                      className={`w-14 h-14 bg-gradient-to-r ${info.color} rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300`}
+                    >
                       <info.icon className="text-2xl text-white" />
                     </div>
                     <div>
@@ -233,7 +250,7 @@ export default function Contact() {
                 Send Me a Message
               </h3>
 
-              {submitStatus === 'success' && (
+              {submitStatus === "success" && (
                 <motion.div
                   initial={{ opacity: 0, y: -20 }}
                   animate={{ opacity: 1, y: 0 }}
@@ -241,21 +258,29 @@ export default function Contact() {
                 >
                   <FaCheckCircle className="text-green-600 dark:text-green-400 text-xl" />
                   <div>
-                    <p className="font-semibold text-green-800 dark:text-green-300">Message Sent!</p>
-                    <p className="text-sm text-green-700 dark:text-green-400">I'll get back to you soon.</p>
+                    <p className="font-semibold text-green-800 dark:text-green-300">
+                      Message Sent!
+                    </p>
+                    <p className="text-sm text-green-700 dark:text-green-400">
+                      I'll get back to you soon.
+                    </p>
                   </div>
                 </motion.div>
               )}
 
-              {submitStatus === 'error' && (
+              {submitStatus === "error" && (
                 <motion.div
                   initial={{ opacity: 0, y: -20 }}
                   animate={{ opacity: 1, y: 0 }}
                   className="mb-6 p-4 bg-red-100 dark:bg-red-900/20 border border-red-400 dark:border-red-700 rounded-lg flex items-center gap-3"
                 >
                   <div>
-                    <p className="font-semibold text-red-800 dark:text-red-300">Something went wrong!</p>
-                    <p className="text-sm text-red-700 dark:text-red-400">Please try again or email me directly.</p>
+                    <p className="font-semibold text-red-800 dark:text-red-300">
+                      Something went wrong!
+                    </p>
+                    <p className="text-sm text-red-700 dark:text-red-400">
+                      Please try again or email me directly.
+                    </p>
                   </div>
                 </motion.div>
               )}
@@ -333,7 +358,7 @@ export default function Contact() {
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
                   className={`w-full py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg font-semibold flex items-center justify-center gap-2 transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/25 ${
-                    isSubmitting ? 'opacity-70 cursor-not-allowed' : ''
+                    isSubmitting ? "opacity-70 cursor-not-allowed" : ""
                   }`}
                 >
                   {isSubmitting ? (

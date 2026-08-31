@@ -178,10 +178,10 @@ export default function Footer() {
                 <li className="flex items-center gap-3 text-gray-600 dark:text-gray-400">
                   <FaEnvelope className="text-blue-600 flex-shrink-0" />
                   <a
-                    href="mailto:shalomshobowale65@gmail.com"
+                    href="mailto:shobowaleshallom@gmail.com"
                     className="text-sm hover:text-blue-600 transition-colors"
                   >
-                    shalomshobowale65@gmail.com
+                    shobowaleshallom@gmail.com
                   </a>
                 </li>
                 <li className="flex items-center gap-3 text-gray-600 dark:text-gray-400">
